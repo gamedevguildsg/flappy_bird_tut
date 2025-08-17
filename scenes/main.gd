@@ -25,6 +25,8 @@ func new_game():
 	game_over = false
 	score = 0
 	scroll = 0
+	$Instructions.show()
+
 	$ScoreLabel.text = "SCORE: " + str(score)
 	$GameOver.hide()
 	get_tree().call_group("pipes", "queue_free")
@@ -50,6 +52,7 @@ func start_game():
 	$Bird.flap()
 	#start pipe timer
 	$PipeTimer.start()
+	$Instructions.hide()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

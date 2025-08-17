@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://blj5g47uwo7m0"]
 
-[ext_resource type="Script" path="res://scenes/main.gd" id="1_5g6v2"]
+[ext_resource type="Script" uid="uid://ccpm32bqi5gu2" path="res://scenes/main.gd" id="1_5g6v2"]
 [ext_resource type="Texture2D" uid="uid://d38ceuoo614k4" path="res://assets/bg.png" id="1_s2jh7"]
 [ext_resource type="PackedScene" uid="uid://cr3pl7yfk32tb" path="res://scenes/pipe.tscn" id="2_h58j0"]
 [ext_resource type="PackedScene" uid="uid://b6xt1pam4caki" path="res://scenes/bird.tscn" id="3_4ap2d"]
@@ -36,6 +36,20 @@ theme_override_font_sizes/font_size = 40
 text = "SCORE: 0"
 
 [node name="GameOver" parent="." instance=ExtResource("6_yk7bg")]
+
+[node name="Instructions" type="Label" parent="."]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -212.0
+offset_bottom = -157.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 40
+text = "Click to start!"
+horizontal_alignment = 1
 
 [connection signal="hit" from="Ground" to="." method="_on_ground_hit"]
 [connection signal="timeout" from="PipeTimer" to="." method="_on_pipe_timer_timeout"]
