@@ -1,4 +1,5 @@
 # Flappy Mynah (Godot 4.4)
+![Flappy Mynah Preview](flappy.gif)
 
 This is a simple Flappy Bird-style game made in **Godot 4.4**.  
 ⚠️ **Important:** This project will only open correctly in **Godot 4.4 or newer**.  
@@ -11,8 +12,9 @@ by [Coding With Russ](https://www.youtube.com/@CodingWithRuss) (60k+ subscribers
 ---
 
 ## 🎥 Tutorial Video
-Watch the full tutorial here:  
-➡️ [Beginner Godot Tutorial - Make Flappy Bird in 12 Minutes!](https://www.youtube.com/watch?v=9f9t9eiCDAA&t=3s)
+Click the image below to watch the tutorial on YouTube:
+
+[![Watch the video](https://img.youtube.com/vi/9f9t9eiCDAA/0.jpg)](https://www.youtube.com/watch?v=9f9t9eiCDAA)
 
 ---
 
